@@ -1,0 +1,15 @@
+{
+  "name": "webpack-cill",
+  "version": "0.0.1",
+  "description": "Basic configuration of webpack",
+  "keywords": [
+    "webpack",
+    "webpack-cill"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kisstar/webpack-cill.git"
+  },
+  "author": "kisstar <dwh.chn@foxmail.com>",
+  "license": "MIT"
+}
