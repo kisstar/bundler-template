@@ -11,5 +11,8 @@
     "url": "git@github.com:kisstar/webpack-cill.git"
   },
   "author": "kisstar <dwh.chn@foxmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^4.2.3"
+  }
 }
