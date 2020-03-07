@@ -2,6 +2,11 @@
   "name": "webpack-cill",
   "version": "0.0.1",
   "description": "Basic configuration of webpack",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "keywords": [
     "webpack",
     "webpack-cill"
@@ -11,8 +16,10 @@
     "url": "git@github.com:kisstar/webpack-cill.git"
   },
   "author": "kisstar <dwh.chn@foxmail.com>",
-  "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "husky": "^4.2.3"
-  }
+  },
+  "license": "MIT"
 }
