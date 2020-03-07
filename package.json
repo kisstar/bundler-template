@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Basic configuration of webpack",
   "scripts": {
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "markdownlint": "markdownlint **/*.md"
   },
   "config": {
     "commitizen": {
@@ -29,7 +30,9 @@
     "@commitlint/config-conventional": "^8.3.4",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.1.0",
-    "husky": "^4.2.3"
+    "husky": "^4.2.3",
+    "markdownlint": "^0.19.0",
+    "markdownlint-cli": "^0.22.0"
   },
   "license": "MIT"
 }
