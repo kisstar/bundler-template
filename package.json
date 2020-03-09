@@ -4,7 +4,8 @@
   "description": "Basic configuration of webpack",
   "scripts": {
     "commit": "git-cz",
-    "markdownlint": "markdownlint **/*.md"
+    "mdlint": "markdownlint **/*.md",
+    "eslint": "eslint --cache --ext .js ."
   },
   "config": {
     "commitizen": {
@@ -30,6 +31,9 @@
     "@commitlint/config-conventional": "^8.3.4",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.1.0",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.18.2",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "markdownlint": "^0.19.0",

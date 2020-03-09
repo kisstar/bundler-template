@@ -1,3 +1,4 @@
 {
-  "*.md": ["npm run markdownlint"]
+  "*.md": ["npm run mdlint"],
+  "*.js": ["npm run eslint"]
 }
