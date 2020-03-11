@@ -4,8 +4,10 @@
   "description": "Basic configuration of webpack",
   "scripts": {
     "commit": "git-cz",
-    "mdlint": "markdownlint **/*.md",
-    "eslint": "eslint --cache --ext .js ."
+    "lint:md": "markdownlint **/*.md",
+    "lint:es": "eslint --cache --ext .js .",
+    "lint:prettier": "prettier --check \"**/*\" --end-of-line auto",
+    "prettier": "prettier -c --write \"**/*\""
   },
   "config": {
     "commitizen": {
@@ -33,11 +35,14 @@
     "cz-conventional-changelog": "^3.1.0",
     "eslint": "6.1.0",
     "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-prettier": "^3.1.2",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "markdownlint": "^0.19.0",
-    "markdownlint-cli": "^0.22.0"
+    "markdownlint-cli": "^0.22.0",
+    "prettier": "^1.19.1"
   },
   "license": "MIT"
 }
