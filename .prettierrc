@@ -40,6 +40,12 @@
       "options": {
         "parser": "json"
       }
+    },
+    {
+      "files": ".htmlhintrc",
+      "options": {
+        "parser": "json"
+      }
     }
   ]
 }

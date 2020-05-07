@@ -1,4 +1,5 @@
 {
+  "**/*.{htm,html}": ["yarn run lint:html"],
   "*.less": ["stylelint --syntax less"],
   "*.js": ["yarn run lint:es"],
   "*.md": ["yarn run lint:md"],
