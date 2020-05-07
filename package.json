@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "description": "Basic configuration of webpack",
   "scripts": {
-    "commit": "git-cz",
-    "lint:md": "markdownlint **/*.md",
+    "lint:style": "stylelint --fix \"./src/**/*.less\" --syntax less",
     "lint:es": "eslint --cache --ext .js .",
+    "lint:md": "markdownlint **/*.md",
     "lint:prettier": "prettier --check \"**/*\" --end-of-line auto",
+    "commit": "git-cz",
     "prettier": "prettier -c --write \"**/*\"",
     "release": "standard-version"
   },
@@ -44,7 +45,14 @@
     "markdownlint": "^0.19.0",
     "markdownlint-cli": "^0.22.0",
     "prettier": "^1.19.1",
-    "standard-version": "^7.1.0"
+    "standard-version": "^7.1.0",
+    "stylelint": "^13.3.3",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-order": "^4.0.0"
   },
   "license": "MIT"
 }

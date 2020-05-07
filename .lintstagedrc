@@ -1,4 +1,5 @@
 {
+  "*.less": ["stylelint --syntax less"],
   "*.js": ["yarn run lint:es"],
   "*.md": ["yarn run lint:md"],
   "**/*.{js,jsx,tsx,ts,less,md,json}": ["prettier --write"]
