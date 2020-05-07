@@ -13,6 +13,7 @@ robots.txt
 .markdownlintignore
 .prettierignore
 .eslintcache
+.stylelintignore
 *.svg
 *.png
 *.jpg
