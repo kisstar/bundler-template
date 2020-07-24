@@ -4,6 +4,7 @@
 package.json
 robots.txt
 .nvmrc
+.npmrc
 .yarnrc
 *.lock
 *.log

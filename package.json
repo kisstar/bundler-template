@@ -4,10 +4,11 @@
   "description": "Basic configuration of webpack",
   "scripts": {
     "lint:html": "htmlhint public/**/*.{htm,html}",
-    "lint:style": "stylelint --fix \"./src/**/*.less\" --syntax less",
+    "lint:style": "stylelint --allow-empty-input --syntax less \"src/**/*.less\"",
     "lint:es": "eslint --no-error-on-unmatched-pattern --cache --ext .js .",
     "lint:md": "markdownlint **/*.md",
     "lint:prettier": "prettier --check \"**/*\" --end-of-line auto",
+    "lint": "concurrently npm:lint:*",
     "commit": "git-cz",
     "prettier": "prettier -c --write \"**/*\"",
     "release": "standard-version"
@@ -35,6 +36,7 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "commitizen": "^4.0.3",
+    "concurrently": "^5.2.0",
     "cz-conventional-changelog": "^3.1.0",
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "14.2.0",
