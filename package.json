@@ -1,0 +1,23 @@
+{
+  "name": "bundler-template",
+  "version": "1.0.0",
+  "description": "记录各个打包工具在各个场景下的基础模板。",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kisstar/bundler-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kisstar/bundler-template/issues"
+  },
+  "homepage": "https://github.com/kisstar/bundler-template#readme",
+  "dependencies": {
+    "standard-version": "^9.1.1"
+  }
+}
