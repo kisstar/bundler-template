@@ -1,7 +1,7 @@
 {
-  "name": "webpack-cill",
+  "name": "project-base",
   "version": "0.0.1",
-  "description": "Basic configuration of webpack",
+  "description": "Basic configuration of the project",
   "scripts": {
     "lint:html": "htmlhint public/**/*.{htm,html}",
     "lint:style": "stylelint --allow-empty-input --syntax less \"src/**/*.less\"",
@@ -23,15 +23,7 @@
       "@commitlint/config-conventional"
     ]
   },
-  "keywords": [
-    "webpack",
-    "webpack-cill"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:kisstar/webpack-cill.git"
-  },
-  "author": "kisstar <dwh.chn@foxmail.com>",
+  "keywords": [],
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",

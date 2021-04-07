@@ -1,13 +1,12 @@
+# Output
 /dist
 /docs/.vuepress/dist
-/lib/yarn/releases
-package.json
-robots.txt
-.nvmrc
-.npmrc
-.yarnrc
-*.lock
+
+# Logs
+logs
 *.log
+
+# Configuration file
 .editorconfig
 .gitignore
 .eslintignore
@@ -15,6 +14,15 @@ robots.txt
 .prettierignore
 .eslintcache
 .stylelintignore
+
+.nvmrc
+.npmrc
+.yarnrc
+
+package.json
+package-lock.json
+
+# Image
 *.svg
 *.png
 *.jpg
@@ -23,6 +31,8 @@ robots.txt
 *.bmp
 *.tiff
 *.ico
-.DS_Store
+
+# Other
 .history
+.DS_Store
 LICENSE
