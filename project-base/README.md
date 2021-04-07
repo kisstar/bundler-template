@@ -1,3 +1,3 @@
 # project-base
 
-项目的基础配置。
+Basic configuration of the project.
