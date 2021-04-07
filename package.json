@@ -1,7 +1,7 @@
 {
   "name": "bundler-template",
   "version": "1.0.0",
-  "description": "记录各个打包工具在各个场景下的基础模板。",
+  "description": "Collect and collate the basic environment for some project development.",
   "main": "index.js",
   "scripts": {
     "release": "standard-version"
