@@ -1,0 +1,67 @@
+{
+  "name": "package-name",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "eslint": "eslint 'packages/**/src/**/*.ts'",
+    "eslint:fix": "eslint --fix 'packages/**/src/**/*.ts'",
+    "stylelint": "stylelint 'packages/**/src/**/*.scss'",
+    "stylelint:fix": "stylelint --fix 'packages/**/src/**/*.scss'",
+    "prettier": "prettier 'packages/**/src/**/*.ts'",
+    "prettier:fix": "prettier --write 'packages/**/src/**/*.ts'",
+    "commit": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "packages/**/src/**/*.ts": [
+      "eslint"
+    ],
+    "packages/**/src/**/*.scss": [
+      "stylelint"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "4.28.2",
+    "@typescript-eslint/parser": "4.28.2",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "7.30.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-import-resolver-node": "^0.3.4",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-prettier": "3.4.0",
+    "husky": "4.3.8",
+    "lerna": "^3.22.1",
+    "lint-staged": "11.0.0",
+    "prettier": "2.3.2",
+    "stylelint": "13.13.1",
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-rational-order": "0.1.2",
+    "stylelint-config-sass-guidelines": "8.0.0",
+    "stylelint-config-standard": "22.0.0",
+    "stylelint-order": "4.1.0",
+    "stylelint-prettier": "1.2.0",
+    "typescript": "^4.3.5"
+  }
+}
