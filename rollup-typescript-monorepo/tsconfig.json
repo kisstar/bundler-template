@@ -1,0 +1,20 @@
+{
+  "include": [
+    "packages/*/src/**/*",
+    "packages/*/lib/**/*"
+  ],
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    "rootDir": ".",
+    "baseUrl": "./",
+    "outDir": "dist",
+    "paths": {
+      "@alpha": [
+        "packages/package-alpha/src"
+      ],
+      "@beta": [
+        "packages/package-beta/lib"
+      ],
+    }
+  }
+}

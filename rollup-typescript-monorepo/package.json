@@ -1,0 +1,83 @@
+{
+  "name": "rollup-typescript-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "eslint": "eslint 'packages/**/{src,lib}/**/*.ts'",
+    "eslint:fix": "eslint --fix 'packages/**/{src,lib}/**/*.ts'",
+    "stylelint": "stylelint 'packages/**/src/**/*.scss'",
+    "stylelint:fix": "stylelint --fix 'packages/**/src/**/*.scss'",
+    "prettier": "prettier 'packages/**/src/**/*.ts'",
+    "prettier:fix": "prettier --write 'packages/**/src/**/*.ts'",
+    "commit": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "packages/**/{src,lib}/**/*.ts": [
+      "eslint"
+    ],
+    "packages/**/src/**/*.scss": [
+      "stylelint"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-replace": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "4.28.2",
+    "@typescript-eslint/parser": "4.28.2",
+    "autoprefixer": "^10.3.0",
+    "commitizen": "^4.2.2",
+    "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "7.30.0",
+    "eslint-config-airbnb-typescript": "12.3.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-import-resolver-node": "^0.3.4",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-prettier": "3.4.0",
+    "husky": "4.3.8",
+    "lerna": "^3.22.1",
+    "lint-staged": "11.0.0",
+    "postcss": "^8.3.5",
+    "prettier": "2.3.2",
+    "rollup": "^2.34.2",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-scss": "3",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "sass": "^1.35.2",
+    "stylelint": "13.13.1",
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-rational-order": "0.1.2",
+    "stylelint-config-sass-guidelines": "8.0.0",
+    "stylelint-config-standard": "22.0.0",
+    "stylelint-order": "4.1.0",
+    "stylelint-prettier": "1.2.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  }
+}
