@@ -1,0 +1,17 @@
+# http://help.github.com/ignore-files/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# compiled output
+/dist
+
+# Dependency directories
+node_modules/
+
+# Other
+.DS_Store
