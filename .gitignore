@@ -1,5 +1,8 @@
 # http://help.github.com/ignore-files/
 
+# OSX
+.DS_Store
+
 # IDEs and editors
 .idea
 .project
